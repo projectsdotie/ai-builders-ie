@@ -17,14 +17,14 @@ export const Contact = () => {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6 border-blue-200 text-blue-700 bg-blue-50">
+          <Badge variant="outline" className="mb-6 border-purple-200 text-purple-700 bg-purple-50">
             Get In Touch
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's discuss how AI can drive your business forward. Contact our team of experts for a free consultation.
+            Let's discuss how AI can drive your business forward. Contact our team of experts for a free meeting.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export const Contact = () => {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 py-3">
+                  <Button type="submit" className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 py-3">
                     Send Message
                   </Button>
                 </form>
@@ -95,8 +95,8 @@ export const Contact = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 mb-1">Phone</h4>
@@ -106,8 +106,8 @@ export const Contact = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-pink-600" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 mb-1">Email</h4>
@@ -117,8 +117,8 @@ export const Contact = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 mb-1">Location</h4>
@@ -141,14 +141,14 @@ export const Contact = () => {
               </div>
             </div>
             
-            <Card className="bg-blue-600 text-white border-0">
+            <Card className="bg-gradient-to-br from-purple-600 to-pink-600 text-white border-0">
               <CardContent className="p-8">
                 <h4 className="text-xl font-semibold mb-4">Ready to Get Started?</h4>
-                <p className="mb-6 text-blue-100">
-                  Book a free 30-minute consultation to discuss your AI transformation goals.
+                <p className="mb-6 text-purple-100">
+                  Book a free 30-minute meeting to discuss your AI transformation goals.
                 </p>
-                <Button variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                  Schedule Free Consultation
+                <Button variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
+                  Schedule Free Meeting
                 </Button>
               </CardContent>
             </Card>

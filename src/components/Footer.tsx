@@ -14,7 +14,6 @@ export const Footer = () => {
                 </div>
                 <div>
                   <span className="text-2xl font-bold text-white">AIBuilders.ie</span>
-                  <p className="text-purple-200 text-sm">By The Community Interest Guy Ltd</p>
                 </div>
               </div>
             </div>
@@ -81,7 +80,7 @@ export const Footer = () => {
           </div>
           
           <p className="text-purple-400 text-xs mt-4 leading-relaxed">
-            AIBuilders.ie is a trading name of The Community Interest Guy Ltd. The Community Interest Guy Ltd is registered as a Limited company in England and Wales under company number 16450664. We have a registered office at Fast Track House Pearson Way, Thornaby, Stockton-On-Tees, England, TS17 6PT
+            AIBuilders.ie - AI Digital Transformation Experts serving Ireland and the UK. Registered office: Ireland.
           </p>
         </div>
       </div>

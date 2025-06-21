@@ -24,7 +24,6 @@ export const Header = () => {
             </div>
             <div>
               <span className="text-xl font-bold text-purple-600">AIBuilders.ie</span>
-              <p className="text-gray-500 text-xs">By The Community Interest Guy Ltd</p>
             </div>
           </div>
           

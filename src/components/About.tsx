@@ -1,7 +1,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Heart, Lightbulb, Award, Check } from "lucide-react";
+import { Target, Heart, Lightbulb, Award, Check, Zap } from "lucide-react";
 
 export const About = () => {
   const values = [
@@ -79,11 +79,11 @@ export const About = () => {
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Its consultancy approach combines strategic planning with practical implementation, ensuring your organisation doesn't just set goals—it achieves them sustainably. Whether you're struggling with governance structures, stakeholder engagement, or operational efficiency, AI digital transformation provides tailored solutions that respect your values while driving measurable outcomes.
+              Its implementation approach combines strategic planning with practical execution, ensuring your organisation doesn't just set goals—it achieves them sustainably. Whether you're struggling with governance structures, stakeholder engagement, or operational efficiency, AI digital transformation provides tailored solutions that respect your values while driving measurable outcomes.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Unlike generic business consultancy, AI digital transformation specialises exclusively in the social enterprise ecosystem, bringing deep sector knowledge and a collaborative approach that puts your community and beneficiaries at the heart of every strategic decision.
+              Unlike generic business implementation, AI digital transformation specialises exclusively in the social enterprise ecosystem, bringing deep sector knowledge and a collaborative approach that puts your community and beneficiaries at the heart of every strategic decision.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
@@ -131,7 +131,7 @@ export const About = () => {
 
         <div className="text-center bg-gradient-to-r from-purple-100 to-pink-100 rounded-3xl p-8">
           <p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-700 mb-6">
-            AIBuilders.ie is a trusted AI digital transformation consultant with proven expertise in transforming social enterprises across Ireland.
+            AIBuilders.ie is a trusted AI digital transformation expert with proven expertise in transforming social enterprises across Ireland.
           </p>
           <button className="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-8 py-4 rounded-full font-medium hover:from-purple-700 hover:to-orange-600 transition-all duration-300 inline-flex items-center">
             <Zap className="h-5 w-5 mr-2" />

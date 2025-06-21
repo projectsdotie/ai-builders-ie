@@ -6,7 +6,7 @@ export const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: "AI Strategy & Consulting",
+      title: "AI Strategy & Implementation",
       description: "Develop comprehensive AI strategies aligned with your business goals and digital transformation roadmap.",
       features: ["Strategic Planning", "Technology Assessment", "ROI Analysis", "Implementation Roadmap"],
       iconBg: "bg-purple-500",
