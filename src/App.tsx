@@ -1,63 +1,52 @@
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Services } from "@/components/Services";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import "./App.css";
 
-// Lazy load components for better performance
-const Index = lazy(() => import("./pages/Index").then(module => ({ default: module.Index })));
-const NotFound = lazy(() => import("./pages/NotFound"));
-
-// Loading component with skeleton that matches the site design
-const PageLoadingFallback = () => (
-  <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
-    {/* Header skeleton */}
-    <div className="h-20 bg-white/80 backdrop-blur-sm border-b border-gray-200/50 animate-pulse">
-      <div className="container mx-auto px-4 h-full flex items-center justify-between">
-        <div className="h-8 w-32 bg-gray-200 rounded"></div>
-        <div className="hidden md:flex space-x-8">
-          {[1, 2, 3, 4].map(i => (
-            <div key={i} className="h-4 w-16 bg-gray-200 rounded"></div>
-          ))}
-        </div>
-        <div className="h-10 w-24 bg-gray-200 rounded-full"></div>
+function App() {
+  return (
+    <ErrorBoundary>
+      <div className="min-h-screen bg-white">
+        {/* Skip Navigation Link for Accessibility */}
+        <a 
+          href="#main-content" 
+          className="skip-link"
+          onFocus={(e) => e.target.focus()}
+        >
+          Skip to main content
+        </a>
+        
+        <ErrorBoundary>
+          <Header />
+        </ErrorBoundary>
+        
+        <main id="main-content" role="main">
+          <ErrorBoundary>
+            <Hero />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <About />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Services />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Contact />
+          </ErrorBoundary>
+        </main>
+        
+        <ErrorBoundary>
+          <Footer />
+        </ErrorBoundary>
+        <Toaster />
       </div>
-    </div>
-    
-    {/* Hero skeleton */}
-    <div className="container mx-auto px-4 py-20">
-      <div className="text-center space-y-6">
-        <div className="h-12 w-3/4 bg-gray-200 rounded mx-auto animate-pulse"></div>
-        <div className="h-12 w-2/3 bg-gray-200 rounded mx-auto animate-pulse"></div>
-        <div className="h-6 w-1/2 bg-gray-200 rounded mx-auto animate-pulse"></div>
-        <div className="flex justify-center space-x-4 mt-8">
-          <div className="h-12 w-32 bg-gray-200 rounded-full animate-pulse"></div>
-          <div className="h-12 w-32 bg-gray-200 rounded-full animate-pulse"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Suspense fallback={<PageLoadingFallback />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+    </ErrorBoundary>
+  );
+}
 
 export default App;

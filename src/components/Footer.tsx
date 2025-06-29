@@ -6,22 +6,22 @@ export const Footer = () => {
     <footer className="bg-gradient-to-br from-purple-700 via-purple-600 to-purple-800 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div>
+          <div className="text-center">
             <div className="mb-4">
-              <div className="flex items-center space-x-3 mb-2">
+              <div className="flex items-center justify-center space-x-3 mb-2">
                 <div className="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xl">❤️</span>
+                  <span className="text-white text-xl">🧠</span>
                 </div>
                 <div>
                   <span className="text-2xl font-bold text-white">AIBuilders.ie</span>
                 </div>
               </div>
             </div>
-            <p className="text-purple-100 mb-6 leading-relaxed max-w-md">
+            <p className="text-purple-100 mb-6 leading-relaxed max-w-md mx-auto">
               Leading AI digital transformation experts helping Irish and UK businesses achieve greater productivity, efficiency, and competitive advantage through intelligent solutions.
             </p>
             
-            <div className="flex space-x-4 mb-8">
+            <div className="flex justify-center space-x-4 mb-8">
               <div className="w-12 h-12 bg-purple-800/50 rounded-lg flex items-center justify-center hover:bg-purple-700/50 transition-colors cursor-pointer">
                 <Linkedin className="h-6 w-6 text-white" />
               </div>
@@ -34,8 +34,8 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="space-y-4">
-            <div className="flex items-center space-x-4">
+          <div className="space-y-6">
+            <div className="flex flex-col items-center text-center space-y-2">
               <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                 <Mail className="h-6 w-6 text-white" />
               </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col items-center text-center space-y-2">
               <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
                 <Phone className="h-6 w-6 text-white" />
               </div>
@@ -55,7 +55,7 @@ export const Footer = () => {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col items-center text-center space-y-2">
               <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center">
                 <MapPin className="h-6 w-6 text-white" />
               </div>
