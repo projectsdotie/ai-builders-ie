@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Heart, Lightbulb, Award, Check, Zap } from "lucide-react";
